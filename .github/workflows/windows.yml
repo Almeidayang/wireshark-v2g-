@@ -6,11 +6,11 @@ name: Build Windows plug-in
 
 on:
    push:
-      branches:
-         - main
-   pull_request:
-      branches:
-         - main
+   watch:
+       types: started
+   #pull_request:
+   #   branches:
+   #      - main
    workflow_call:
 
 env:
@@ -24,6 +24,7 @@ jobs:
    intree:
       name: Build in-tree plugin
       runs-on: windows-2022
+      if: github.event.repository.owner.id == github.event.sender.id
       steps:
          - name: Checkout Wireshark
            run: |
