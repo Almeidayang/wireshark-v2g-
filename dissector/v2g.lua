@@ -36,9 +36,9 @@ local V2GTP_EXIDISSECTOR_ISO2 = 3
 
 local v2gtp_exidissector_tab =  {
     { 1, "Default", V2GTP_EXIDISSECTOR_DEFAULT },
-    { 2, "DIN", V2GTP_EXIDISSECTOR_DIN },
-    { 3, "ISO1", V2GTP_EXIDISSECTOR_ISO1 },
-    { 4, "ISO2", V2GTP_EXIDISSECTOR_ISO2 },
+    { 2, "DIN SPEC 70121", V2GTP_EXIDISSECTOR_DIN },
+    { 3, "ISO 15118-2:2013", V2GTP_EXIDISSECTOR_ISO1 },
+    { 4, "ISO 15118-2:2016", V2GTP_EXIDISSECTOR_ISO2 },
 }
 
 v2gtp_protocol.prefs.exidissector = Pref.enum(
