@@ -25,6 +25,9 @@ jobs:
       name: Build in-tree plugin
       runs-on: windows-2022
       if: github.event.repository.owner.id == github.event.sender.id
+      #   为了避免被其他人点击 Star 导致的不必要的麻烦，还需要在 work­flow 文件中加上 
+      #   if: github.event.repository.owner.id == github.event.sender.id 字段，
+      #   这样只有仓库所有者，也就是你自己点 Star 才有效。
       steps:
          - name: Checkout Wireshark
            run: |
