@@ -89,8 +89,8 @@ typedef struct _v2gexi_conv {
 static const value_string v2gexi_mode_names[] = {
 	{ V2GEXI_HANDSHAKE, "Handshake" },
 	{ V2GEXI_DIN, "DIN SPEC 70121" }, /* { V2GEXI_ISO1, "DIN" }, */
-	{ V2GEXI_ISO1, "ISO1" },
-	{ V2GEXI_ISO2, "ISO2" },
+	{ V2GEXI_ISO1, "ISO 15118-2:2013" }, /* { V2GEXI_ISO1, "ISO1" }, */
+	{ V2GEXI_ISO2, "ISO 15118-2:2016" }, /* { V2GEXI_ISO2, "ISO2" }, */
 	{ 0, NULL }
 };
 
